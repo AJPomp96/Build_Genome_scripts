@@ -2,8 +2,9 @@
 args = commandArgs(trailingOnly = TRUE)
 ensembl_release <- args[1]
 wd <- args[2]
-print("esembl release: ", ensembl_release)
-print("wd: ", wd)
+sprintf("esembl release: %s", ensembl_release)
+sprintf("wd: %s", wd)
+
 library(tidyverse)
 library(biomaRt)
 library(httr)
